@@ -1,0 +1,4 @@
+bin/configuredb.sh
+bin/www
+secrets/
+node_modules/
