@@ -43,7 +43,7 @@ psql  -U "your psql username"  -p "your psql port monsters" < ./bin/sql/monsters
 
 echo "$database configured"
 
--Note: Do not pass your psql username and port number as strings. This is for illustrative purposes only.
+- Note: Do not pass your psql username and port number as strings. This is for illustrative purposes only.
                         
 ###########################################################################################################
 
@@ -58,7 +58,7 @@ app.listen(port, () => {
   console.log(`server running on ${port}`);
 });
 
--Note: Do not pass your port number as strings. This is for illustrative purposes only.
+- Note: Do not pass your port number as strings. This is for illustrative purposes only.
 
 ###########################################################################################################
   
