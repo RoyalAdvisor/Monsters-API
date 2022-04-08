@@ -35,11 +35,11 @@ database="monsters"
 
 echo "Configuring database: $database"
 
-dropdb  -U "your psql username"  -p "your psql port" monsters
-createdb  -U "your psql username"  -p "your psql port" monsters 
+dropdb  -U "your psql username"  -p "your psql port number" monsters
+createdb  -U "your psql username"  -p "your psql port number" monsters 
 
 
-psql  -U "your psql username"  -p "your psql port monsters" < ./bin/sql/monsters.sql
+psql  -U "your psql username"  -p "your psql port number" monsters < ./bin/sql/monsters.sql
 
 echo "$database configured"
 
