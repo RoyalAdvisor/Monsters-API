@@ -29,19 +29,21 @@ Within the configuredb.sh file, the code setup is as follows:
 
 #!/bin/bash
 
-export PGPASSWORD="<your psql user password>"
+export PGPASSWORD="your psql user password"
 
 database="monsters"
 
 echo "Configuring database: $database"
 
-dropdb  -U <your psql username>  -p <your psql port> monsters
-createdb  -U <your psql username>  -p <your psql port> monsters
+dropdb  -U "your psql username"  -p "your psql port" monsters
+createdb  -U "your psql username"  -p "your psql port" monsters 
 
 
-psql  -U <your psql username>  -p <your psql port> monsters < ./bin/sql/monsters.sql
+psql  -U "your psql username"  -p "your psql port monsters" < ./bin/sql/monsters.sql
 
 echo "$database configured"
+
+Note: Do not pass your psql username and port number as strings. This is for illustrative purposes only.
                         
 ##########################################################################################################################################################################
 
@@ -50,12 +52,13 @@ Within the www file,  the code setup is as follows:
 #!/usr/bin/env node
 
 const app = require("../app");
-const port = <your port number for localhost>;
+const port = "your port number for localhost";
 
 app.listen(port, () => {
   console.log(`server running on ${port}`);
 });
 
+- Note: Do not pass your port number as strings. This is for illustrative purposes only.
 ##########################################################################################################################################################################
   
 Make sure you have created a database called monsters in PostgreSQL under the username that you will use in the abovementioned configuration files.
