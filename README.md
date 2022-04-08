@@ -58,7 +58,7 @@ app.listen(port, () => {
   console.log(`server running on ${port}`);
 });
 
-- Note: Do not pass your port number as strings. This is for illustrative purposes only.
+Note: Do not pass your port number as strings. This is for illustrative purposes only.
 ##########################################################################################################################################################################
   
 Make sure you have created a database called monsters in PostgreSQL under the username that you will use in the abovementioned configuration files.
